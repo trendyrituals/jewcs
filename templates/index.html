@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block containt %}
+
+<div class="text-center mt-5">
+    <img class="img-fluid" src="/media/{{ detail.img }}" alt="">
+</div>
+
+<div class="text-center mt-5"><h2>About Us</h2></div>
+
+<p class="text-center mt-5">{{ detail.about }}</p>
+<br>
+<p class="text-center">{{detail.extra}}</p>
+
+
+
+<div class="row text-center">
+	<h2 class="mb-5 mt-5">Mission</h2>
+
+
+	{% for m in ms %}
+	<div class="col-md-6">
+		<li class="list-group-item text-center bg-light">{{ m.title }}</li> <br>
+	</div>
+	{% endfor %}
+</div>
+
+
+
+<div class="row text-center">
+	<h2 class="mb-5 mt-5">Vision</h2>
+
+
+	{% for v in vs %}
+	<div class="col-md-6">
+		<li class="list-group-item text-center bg-light">{{ v.title }}</li> <br>
+	</div>
+	{% endfor %}
+</div>
+
+
+<div class="text-center mt-5">
+	<h2>Vast Network</h2>
+	<p class="mt-5">{{ vast.txt }}</p>
+</div>
+
+
+<div class="row text-center">
+	<h2 class="mb-5 mt-5">Our Clients</h2>
+
+
+	{% for c in cl %}
+	<div class="col-md-6">
+		<li class="list-group-item text-center bg-light">{{ c.name }}</li> <br>
+	</div>
+	{% endfor %}
+</div>
+
+
+
+<div>
+	<h2 class="mb-5 mt-5 text-center">Feathers to Our Cap</h2>
+
+	{% for f in fs %}
+		<li class="list-group-item bg-light">
+		<h5>{{ f.title }}</h5>
+		<P>{{ f.details }}</P>
+	</li> <br>
+	{% endfor %}
+</div>
+
+
+
+{% endblock containt %}

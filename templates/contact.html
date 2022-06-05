@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block containt %}
+
+
+<div class="row text-center">
+	<h2 class="mb-5 mt-5">Board Of Directors</h2>
+
+
+	{% for d in ds %}
+	<div class="col-md-4">
+		<li class="list-group-item text-center bg-light">{{ d.name }} ({{d.position}})</li> <br>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="container text-center mt-5">
+<!-- 	<h1>Jaipur Ex-Servicemen Welfare Co-orporative Society</h1>
+<br><br> -->
+
+
+
+	<p><b>"Gaurav Sainani Durg" <br>
+17/1, Sector - 4, Vidhyadhar Nagar, Jaipur</b></p> <br>
+
+<p><b>jewcsl@gmail.com</b></p><br>
+
+<p><b>0141-2337600, 2339087</b></p>
+
+	<br><br><br><br>
+
+</div>
+
+
+
+
+
+
+{% endblock containt %}
