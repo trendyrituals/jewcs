@@ -5,12 +5,13 @@
 
 <div class="row">
 {% for i in gallery %}
-
+	<div class="col-md-4">
 	<img src="/media/{{ i.img }}" class="img-fluid" alt="...">
 	<div class="text-center bg-light">
 		<br>
 	   <p><b>{{ i.name }}</b></p>
 	   <br><br>
+    </div>
     </div>
 {% endfor %}
 </div>
